@@ -14,7 +14,7 @@ const main = async function () {
   let mySqlServices = [familiesService, categoriesService, dbService];
   await setModelsToServices(mySqlServices, mySQLdbModels);
 
-  /* mongo services services */
+  /* mongo services  */
   let mongoDbModels = await initializeMongoDB();
 
   let serviceService = {

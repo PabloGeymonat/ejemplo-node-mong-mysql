@@ -38,7 +38,7 @@ const create = async function (aFamily, t) {
 
   validate(aFamily);
 
-  let newFamily = await dbModels.Families.create(aFamily, { transaction: t });
+  let newFamily = await dbModels.Families.create(aFamily); // { transaction: t });
 
   return newFamily;
 };
